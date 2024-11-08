@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glazbena škola</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="functions.js"></script>
+</head>
+<body class="gradijent">
+    <div class="row">
+        <div class="col1-2"><img class="header-image" src="ss_sivo.png" alt="Logo"></div>
+        <div class="col2-10"><h1>Glazbena škola - <small>Djuka</small></h1></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand">Glazbena škola</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="Pocetna.html">Home</a></li>
+                    <li class="nav-item-right"><a class="nav-link" href="Login.html">Login</a></li>
+                    <li class="nav-item-right"><a class="nav-link" href="Signup.html">Sign-up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h1 class="littleleft">Sign-up</h1>
+        <form action="" method="post">
+            <br>
+            <label for="name">Username: </label>
+            <input type="text" name="username" id="username" required>
+            <br>
+            <label for="name">Ime i prezime: </label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <label for="email">Vaša e-mail adresa: </label>
+            <input type="text" name="email" id="email" required>
+            <br>
+            <label for="email">Password: </label>
+            <input type="text" name="password" id="password" required>
+            <br>
+            <label for="email">Confrim password: </label>
+            <input type="text" name="Cpassword" id="Cpassword" required>
+            <br>
+            <label></label>
+            <input type="button" id="signup" name="signup" value="Sign-up!" onclick="validacija()">
+        </form>
+    </div>
+
+</body>
+</html>
